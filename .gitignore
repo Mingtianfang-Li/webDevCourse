@@ -1,0 +1,7 @@
+# WebStorm project settings
+.idea/
+*.iml
+
+# VSCode project settings
+.vscode/
+
