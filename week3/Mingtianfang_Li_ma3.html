@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mingtianfang_Li_ma3</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header header"
+                "left main main right"
+                "footer footer footer footer";
+            grid-template-columns: 1fr 4fr 4fr 1fr;
+            grid-template-rows: auto 4fr auto;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            height: 100px;
+        }
+
+        .left-side-bar {
+            grid-area: left;
+            border: 2px solid white;
+        }
+
+        .right-side-bar {
+            grid-area: right;
+            border: 2px solid white;
+        }
+
+        footer {
+            grid-area: footer;
+            border: 2px solid white;
+            text-align: center;
+            height: 100px;
+        }
+
+        .main-content {
+            display: flex;
+            grid-area: main;
+            border: 2px solid white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+        .box {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            background-color: azure;
+            transition: 500ms ease-out;
+        }
+        .box:hover {
+            width: 120px;
+            height: 120px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+    <header>
+        <h1>MingtianfangLi's Website</h1>
+    </header>
+
+    <div class="left-side-bar"></div>
+
+    <div class="main-content">
+        <div class="box"></div>
+    </div>
+
+    <div class="right-side-bar"></div>
+
+    <footer>
+    </footer>
+</div>
+</body>
+</html>
